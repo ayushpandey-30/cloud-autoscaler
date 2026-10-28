@@ -1,7 +1,7 @@
 # AI-Based Cloud Resource Monitoring and Auto-Scaling
 
 Course project (Version Control / Cloud Computing).
-Authors: **YOUR NAME** and **TEAMMATE NAME**
+Authors: **Ayush** and **Harsh**
 
 A small system that watches how busy a web service is, predicts the load a
 short time ahead with machine learning, and starts or stops Docker containers
