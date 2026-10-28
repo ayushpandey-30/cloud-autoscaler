@@ -22,3 +22,14 @@
   when the real load had barely moved.
 - Capacity per instance (10 rps) is an assumed number. It should be
   calibrated by measuring how much load one 0.5-CPU container really handles.
+
+  ## Evaluation (Phase 7)
+- Same spike traffic (3 -> 30 -> 3 rps, 240 s) run against no scaling,
+  a threshold rule, and the predictive scaler. CAPACITY calibrated to 20 rps.
+- Slow-or-failed requests: none 73.6%, threshold 39.7%, predictive 28.0%.
+  Average containers: 1.00, 1.19, 1.52.
+- Both scalers clearly beat no scaling. Predictive beat threshold on latency
+  but used about 28% more container-time.
+- Predictive does not foresee spikes (see Phase 3); it wins by sizing the
+  response in one step while the threshold rule adds one container per cooldown.
+- Limitations: one run per strategy, 50 s scaler warm-up, estimated capacity.
