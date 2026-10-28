@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 import requests
 
-URL = "http://localhost:5000/"
+URL = sys.argv[3] if len(sys.argv) > 3 else "http://localhost:5000/"
 
 
 # Each pattern takes f (how far through the run we are, from 0.0 to 1.0)
