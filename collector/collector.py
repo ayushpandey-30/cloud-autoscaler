@@ -1,11 +1,12 @@
 import os
 import sqlite3
+import sys
 import time
 
 import psutil
 import requests
 
-DB_PATH = "data/metrics.db"
+DB_PATH = sys.argv[1] if len(sys.argv) > 1 else "data/metrics.db"
 APP_URL = "http://localhost:5000/metrics"
 INTERVAL = 5   # seconds between readings
 
