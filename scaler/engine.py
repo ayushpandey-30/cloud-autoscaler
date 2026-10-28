@@ -1,6 +1,6 @@
 import math
 
-CAPACITY = 10         # requests/sec one instance handles (simulated number)
+CAPACITY = 20         # requests/sec one instance handles (simulated number)
 TARGET_UTIL = 0.6     # aim to keep each instance 60% busy
 MIN_INSTANCES = 1
 MAX_INSTANCES = 5
