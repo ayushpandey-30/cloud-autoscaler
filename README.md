@@ -134,3 +134,12 @@ Kubernetes or AWS integration, more metrics, and repeated evaluation runs.
 One feature branch per task, merged through pull requests, small commits with
 clear messages. The release is tagged `v1.0-demo`. Design choices are recorded
 in `docs/decisions-log.md`.
+
+## Team contributions
+
+| Member | Role | Work |
+|---|---|---|
+| **Harsh** | Ideation, research and planning | Chose the topic and defined the problem, researched auto-scaling approaches (reactive vs predictive scaling, which metrics to use), compared tools and methods, planned the project phases, and prepared the documentation content, presentation and viva questions |
+| **Ayush** | Technical development | Built the sample app, metrics collector and load generator, collected the datasets, trained and tested the prediction model, built the decision engine, Docker and nginx setup, live scaler, dashboard and evaluation, and ran the live demo |
+
+**Contribution note:** All code and documents were committed from Ayush's GitHub account on a shared development setup. Harsh's work was done offline and shared with Ayush for committing, so it does not appear under a separate account in the commit history.
